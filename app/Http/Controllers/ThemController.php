@@ -22,14 +22,7 @@ class ThemController extends Controller
         return view('them.single-blog');
 
     }
-    public function login(){
-        return view('them.login');
 
-    }
-    public function register(){
-        return view('them.register');
-
-    }
 
 
 

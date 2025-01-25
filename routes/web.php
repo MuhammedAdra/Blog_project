@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ThemController;
-use App\Http\Controllers\SubscribersController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SubscriberController;
+
+
+
 
 
 // Public Routes
@@ -15,7 +18,8 @@ Route::controller(ThemController::class)->name('them.')->group(function(){
 
 });
 // SUBSCRIBER STORE ROUTE
-Route::post('/subscriber/store', [SubscribersController::class, 'store'])->name('subscriber.store');
+Route::post('/subscriber/store', [SubscriberController::class, 'store'])->name('subscriber.store'); // Corrected reference
+
 
 
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subscribers;
+use App\Models\Subscribers; 
 use Illuminate\Http\Request;
 
 class SubscriberController extends Controller
@@ -18,6 +18,3 @@ class SubscriberController extends Controller
         return back()->with('status', 'Subscribed Successfully');
     }
 }
-
-
-
